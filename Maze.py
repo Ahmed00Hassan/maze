@@ -120,12 +120,7 @@ class Maze():
                 if not self.walls[r][c]:
                     result.append((action, (r, c)))
         return result
-    
-    def heuristic(state, goal):
-        """calculate heuristic for A*"""
-        row1, col1 = state
-        row2, col2 = goal
-        return abs(row1 - row2) + abs(col1 - col2)
+
 
     def solve(self):
         """Finds a solution to maze if one exists"""
